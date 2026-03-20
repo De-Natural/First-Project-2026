@@ -1,0 +1,103 @@
+.main{
+
+}
+header{
+    
+    top: 0px;
+    bottom:0px ;
+}
+kbd{
+    font-size:20px ;
+}
+nav{
+     display: flex;
+     align-items: center;
+     
+}
+header nav {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+}
+    
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px
+}
+.firstbutton{
+    color: blue;
+    background-color: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+.phonepath{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.phoneimg{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 1rem;
+}
+.secondbutton{
+    background-color: blue;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+.thirdbutton{
+    background-color:white;
+    border: 1px solid;
+    cursor: pointer;
+}
+/* .author{
+    display:grid;
+    align-items: center;
+    j
+} */
+ .aut{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+ }
+ .p2{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+ }
+ .humansgement{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+ }
+ .mark{
+    display: flex;
+ }
+ .markheaders{
+    margin-left: 1rem;
+ }
+ .icon{
+    display: grid;
+     grid-template-columns: auto auto auto;
+     column-gap: -12rem;
+ }
+ h3{
+    color: orange;
+ }
+ .sidep1{
+    color: orange;
+ }
+ h4{
+    color: orange;
+ }
+ h5{
+    color: orange;
+ }
+ .icons{
+    cursor: pointer;
+ }
