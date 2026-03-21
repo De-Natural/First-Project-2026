@@ -101,3 +101,50 @@ ul{
  .icons{
     cursor: pointer;
  }
+  .portal{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .who{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .want{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .housing{
+    display: grid;
+    grid-template-areas: 
+    'one two'
+    'three four';
+    padding: 5px;
+    gap: 20px;
+
+  }
+  .housing>div{
+    padding: 5px;
+  }
+  .housing div.one{
+    grid-area: one;
+  }
+  .housing div.two{
+    grid-area: two;
+  }
+  .housing div.three{
+    grid-area: three;
+  }
+  .housing div.four{
+    grid-area: four;
+  }
+     
