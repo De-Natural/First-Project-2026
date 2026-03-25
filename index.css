@@ -1,103 +1,302 @@
-.main{
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-header{
-    
-    top: 0px;
-    bottom:0px ;
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
-kbd{
-    font-size:20px ;
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-nav{
-     display: flex;
-     align-items: center;
-     
+
+header {
+    padding: 1rem 5%;
+    width: 100%;
 }
+
+kbd {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
 header nav {
     display: flex;
-    align-content: space-between;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
-    
 
-ul{
+ul {
     list-style: none;
     display: flex;
-    gap: 10px
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-.firstbutton{
+
+.firstbutton {
     color: blue;
     background-color: white;
-    border: 1px solid;
+    border: 1px solid blue;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
     cursor: pointer;
+    font-weight: 600;
 }
-.phonepath{
+
+.firstbutton:hover {
+    background-color: #f0f8ff;
+}
+
+.phonepath {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 2rem;
+    padding: 2rem 5%;
+    gap: 2rem;
 }
-.phoneimg{
+
+.phonewriteup {
+    flex: 1 1 400px;
+}
+
+.phonewriteup h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.p1 {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.phoneimg {
+    flex: 1 1 400px;
     display: flex;
-    align-self: center;
-    justify-self: center;
-    margin-top: 1rem;
+    justify-content: center;
 }
-.secondbutton{
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.secondbutton {
     background-color: blue;
     color: white;
-    border: 1px solid;
+    border: 1px solid blue;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
 }
-.thirdbutton{
-    background-color:white;
-    border: 1px solid;
-    cursor: pointer;
+
+.secondbutton:hover {
+    background-color: darkblue;
 }
-/* .author{
-    display:grid;
-    align-items: center;
-    j
-} */
- .aut{
-    display: flex;
-    align-self: center;
-    justify-self: center;
- }
- .p2{
-    display: flex;
-    align-self: center;
-    justify-self: center;
- }
- .humansgement{
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
- }
- .mark{
-    display: flex;
- }
- .markheaders{
-    margin-left: 1rem;
- }
- .icon{
-    display: grid;
-     grid-template-columns: auto auto auto;
-     column-gap: -12rem;
- }
- h3{
-    color: orange;
- }
- .sidep1{
-    color: orange;
- }
- h4{
-    color: orange;
- }
- h5{
-    color: orange;
- }
- .icons{
+
+.thirdbutton {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
- }
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.thirdbutton:hover {
+    background-color: #f5f5f5;
+}
+
+/* author */
+.author {
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.aut {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.p2 {
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.humansgement {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem 5%;
+    gap: 3rem;
+    
+}
+
+.mark {
+    display: flex;
+    flex: 2 1 500px;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.mark > img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.markheaders {
+    flex: 1 1 300px;
+}
+
+.markheaders h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.p3 {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.p4 {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.icons:hover {
+    transform: translateY(-2px);
+}
+
+.markside {
+    flex: 1 1 250px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.markside h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+h3, .sidep1, h4, h5 {
+    color: orange;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 992px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .phonepath {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .phonewriteup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    .mark {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mark > img {
+        margin-bottom: 1rem;
+    }
+
+    .icon {
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    header, .phonepath, .author, .humansgement {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .phonewriteup h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li, .firstbutton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondbutton, .thirdbutton {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .markside {
+        width: 100%;
+        text-align: center;
+    }
+}
