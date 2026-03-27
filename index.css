@@ -101,6 +101,86 @@ ul{
  .icons{
     cursor: pointer;
  }
+ /* Media Queries */
+
+/* Tablets */
+@media (max-width: 992px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .phonepath {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .phonewriteup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    .mark {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mark > img {
+        margin-bottom: 1rem;
+    }
+
+    .icon {
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    header, .phonepath, .author, .humansgement {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .phonewriteup h1 {
+        font-size: 2rem;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li, .firstbutton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .secondbutton, .thirdbutton {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .markside {
+        width: 100%;
+        text-align: center;
+    }
+}
+
   .portal{
     background-color: blue;
     color: white;
