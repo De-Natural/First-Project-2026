@@ -255,7 +255,7 @@ body {
   color: #111;
 }
 
-/* SECTION */
+
 .demo {
   padding: 80px 20px;
 }
@@ -269,7 +269,7 @@ body {
   gap: 50px;
 }
 
-/* LEFT TEXT */
+
 .demo-text {
   flex: 1;
 }
@@ -304,14 +304,14 @@ body {
   max-width: 400px;
 }
 
-/* RIGHT IMAGE */
+
 .demo-image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-/* IMAGE WRAPPER */
+
 .image-wrapper {
   position: relative;
   display: inline-block;
@@ -324,7 +324,7 @@ body {
   opacity: 0.85;
 }
 
-/* PLAY BUTTON */
+
 .play-button {
   position: absolute;
   top: 50%;
@@ -347,13 +347,13 @@ body {
   transition: all 0.3s ease;
 }
 
-/* HOVER EFFECT */
+
 .play-button:hover {
   transform: translate(-50%, -50%) scale(1.1);
   background: rgba(0, 123, 255, 1);
 }
 
-/* 📱 MOBILE */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
